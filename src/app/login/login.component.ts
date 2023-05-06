@@ -19,14 +19,9 @@ export class LoginComponent implements OnInit {
 
   }
 
-  login(a:any,b:any){
-    // console.log(a.value,b.value);
-    
-    this.uname=a.value
-    this.psw=b.value
-    console.log(this.uname,this.psw);
-    
-    alert("login button clicked")
+  login(){
+  console.log(this.uname,this.psw);
+  
   }
   
 

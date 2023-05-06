@@ -3,14 +3,14 @@
     <h1 class="text-center text-info">SIGN IN</h1>
     <div class="p-2 mt-2">
         <label class="text-info" for="u1">ACCOUNT NUMBER</label>
-        <input #uname  type="text" [placeholder]="placeHolderData" id="u1" class="form-control">
+        <input [(ngModel)]="uname" type="text" [placeholder]="placeHolderData" id="u1" name="uname" class="form-control">
     </div>
     <div class="p-2 mt-2">
         <label class="text-info" for="u2">PASSWORD</label>
-        <input #psw type="text" placeholder="Enter password" id="u2" class="form-control">
+        <input [(ngModel)]="psw" type="text" placeholder="Enter password" id="u2" name="psw" class="form-control">
     </div>
     <div class="p-2 mt-2 text-center">
-        <button (click)="login(uname,psw)" class="btn btn-info">login</button>
+        <button (click)="login()" class="btn btn-info">login</button>
     </div>
     <p class="text-center pt-2 text-white">Don't have a account? <a class="text-info" style="text-decoration: none;" href="">create account</a> </p>
 </form>
